@@ -1,0 +1,11 @@
+services:
+  fastapi:
+    build: .
+    container_name: collec_AI_API
+    ports:
+      - "13131:13131"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python main.py
