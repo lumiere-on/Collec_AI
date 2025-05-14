@@ -4,8 +4,12 @@ services:
     container_name: collec_AI_API
     ports:
       - "13131:13131"
+    env_file:
+      - .env
     volumes:
       - .:/app
+      - ./keys/wise-alpha-451006-r6-ffa3465ce044.json:/app/keys/wise-alpha-451006-r6-ffa3465ce044.json
+
     environment:
       - PYTHONUNBUFFERED=1
     command: python main.py

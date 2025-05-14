@@ -1,0 +1,11 @@
+.env
+wise-alpha-451006-r6-ffa3465ce044.json
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env.*
+.idea/
+.vscode/
+*.log
+.gitignore
